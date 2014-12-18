@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
-      <title>Asteroids [Reloaded] - HTML5 Canvas JavaScript Game by Kevin Roast</title>
-      <script>
-var a = navigator.userAgent;
-if (a.indexOf("iPhone;") != -1 || a.indexOf("iPod;") != -1 || a.indexOf("iPad;") != -1)
-{
-   window.location.href = "index-ios.html";
-}
-      </script>
-      <script src="scripts/mathlib-min.js"></script>
-      <script src="scripts/gamelib-min.js"></script>
-      <script src="scripts/asteroids-min.js"></script>
-      <script async defer src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-      <script async defer src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e4813104686cad8"></script>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<meta charset="utf-8" />
+	<title>爆破彗星 [Reloaded] - HTML5 Canvas JavaScript Game by Kevin Roast</title>
+	<script>
+		var a = navigator.userAgent;
+		if (a.indexOf("iPhone;") != -1 || a.indexOf("iPod;") != -1 || a.indexOf("iPad;") != -1)
+		{
+			window.location.href = "index-ios.html";
+		}
+	</script>
+	<script src="scripts/mathlib.js"></script>
+	<script src="scripts/gamelib.js"></script>
+     <!-- <script src="scripts/asteroids-min.js"></script> -->
+	<script src="scripts/asteroids_main.js"></script>
+	<script src="scripts/asteroids_effects.js"></script>
+	<script src="scripts/asteroids_enemies.js"></script>
+	<script src="scripts/asteroids_player.js"></script>
+	<script src="scripts/asteroids_prerender.js"></script>
+	<script src="scripts/asteroids_weapons.js"></script>
+	
+	
+    <script async defer src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+      
       <style type="text/css">
 body
 {
@@ -155,17 +164,7 @@ a, a:visited, a:active, a:hover
    </head>
    
    <body style="background-color: #000000">
-      <a href="https://github.com/kevinroast"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-      <div class="button-overlay">
-         <!-- AddThis Button BEGIN -->
-         <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-         <a class="addthis_button_preferred_1"></a>
-         <a class="addthis_button_preferred_2"></a>
-         <a class="addthis_button_compact"></a>
-         <a class="addthis_counter addthis_bubble_style"></a>
-         </div>
-         <!-- AddThis Button END -->
-      </div>
+      
       <div class="wrapper">
          <canvas class="box-shadow" id="canvas" width="640" height="640"></canvas>
          <div class="info">

@@ -40,14 +40,21 @@ var GLOWEFFECT = true;
 var GLOWSHADOWBLUR = 8;
 var SCOREDBKEY = "asteroids-score-1.1";
 
+//小星星图片
 var g_asteroidImgs = [];
 g_asteroidImgs[0] = new Image();
 g_asteroidImgs[1] = new Image();
 g_asteroidImgs[2] = new Image();
 g_asteroidImgs[3] = new Image();
+
+//护盾图片
 var g_shieldImg = new Image();
+
+//背景图片
 var g_backgroundImg = new Image();
+//飞船图片
 var g_playerImg = new Image();
+//敌人飞船图片
 var g_enemyshipImg = new Image();
 
 
